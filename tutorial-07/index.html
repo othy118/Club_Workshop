@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8 px-4">
+        <div class="flex justify-center items-center gap-5">
+            <img src="/code-crafters.svg" width="50" height="50" alt="" srcset="">
+            <h1 class="text-3xl font-semibold text-center mb-4">Code Crafters GPT</h1>
+        </div>
+        <div id="outputContainer" class="mt-6">
+            <h2 class="text-lg font-semibold mb-2">Generated Text:</h2>
+            <div id="outputText" class="bg-white rounded-lg shadow-md p-4 "></div>
+        </div>
+        <div class="absolute bottom-10 flex  w-[100%] items-center justify-center overflow ">
+        <div class="  flex w-[90%]  items-center space-x-2 rounded-full">
+            <input id="inputText" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 rounded-l-full" placeholder="Enter your prompt" type="text" />
+            <button id="generateButton" class="inline-flex bg-black items-center cursor-pointer justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 rounded-r-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" color="white" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5">
+                    <path d="m22 2-7 20-4-9-9-4Z"></path>
+                    <path d="M22 2 11 13"></path>
+                </svg>
+            </button>
+        </div>
+</div>
+    </div>
+
+
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
